@@ -1,0 +1,33 @@
+// base
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+@import './base/reset';
+@import './base/var';
+@import './base/base';
+
+// block
+
+@import './block/home-icon';
+@import './block/btn';
+@import './block/title';
+@import './block/nav';
+@import './block/header';
+@import './block/search';
+@import './block/form';
+@import './block/partners';
+@import './block/properties';
+@import './block/cards';
+@import './block/featured';
+@import './block/reviews';
+@import './block/carousel';
+@import './block/user';
+@import './block/footer';
+
+
+
+.none {
+	display: none !important;
+}
+

@@ -1,0 +1,19 @@
+body, html {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;  
+		color: #030A1B;
+}
+
+.container {
+    max-width: var(--container-width);
+    padding: var(--container-padding);
+    margin: 0 auto;
+}
+
+.active, a:hover {
+    color: var(--color-hover) !important;
+}
+

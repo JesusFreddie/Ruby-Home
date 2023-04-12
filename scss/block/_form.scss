@@ -1,0 +1,98 @@
+.header__form {
+	display: flex;
+}
+.form {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	
+	&__row {
+		background-color: #433E89;
+		border-radius: 10px;
+		padding: 70px 15px;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			left: -106px;
+			top: 19px;
+			background-image: url('./../images/form/ellipse-left.svg');
+			background-repeat: no-repeat;
+			width: 208px;
+			height: 208px;
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			right: 10px;
+			background-image: url('./../images/form/ellipse-rigth.svg');
+			background-repeat: no-repeat;
+			width: 208px;
+			height: 208px;
+		}
+
+	}
+	&__text {
+		text-align: center;
+		max-width: 730px;
+		margin: 0 auto;
+		color: #fff;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		p {
+			max-width: 635px;
+			margin: 0 auto;
+			opacity: 0.7;
+		}
+		margin-bottom: 70px;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 44px;
+		line-height: 60px;
+		margin-bottom: 15px;
+	}
+	form {
+		margin: 0 auto;
+		max-width: 743px;
+		background-color: #fff;
+		display: flex;
+		justify-content: space-between;
+		padding: 7px 7px 7px 10px;
+		border-radius: 10px;
+	}
+	input {
+		width: 521px;
+		padding: 14px;
+	}
+	.btn {
+		padding: 16px 40px;
+		transition: .2s ease-in;
+	}
+}
+
+
+@media (max-width: 508px) {
+	.form {
+		.btn {
+			padding: 10px 30px;
+			font-size: 0;
+			background-image: url('./../images/icon/mail.svg');
+			background-repeat: no-repeat;
+			background-size: 25px;
+			background-position: center;
+		}
+	}
+}
+@media (max-width: 396px) {
+	.form {
+
+		input {
+			max-width: 521px;
+			padding: 10px;
+			font-size: 13px;
+		}
+	}
+}

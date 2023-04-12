@@ -1,0 +1,18 @@
+.btn {
+		display: inline-block;
+    color: #fff !important;
+    padding: 10px 20px;
+    background-color: var(--bg-btn);
+		border-radius: 5px;
+
+		&:hover {
+			background-color: #030A1B;
+			color: #fff !important;
+		}
+}
+
+.nav {
+	.btn {
+		padding: 15px 30px;
+	}
+}

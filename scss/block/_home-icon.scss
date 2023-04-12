@@ -1,0 +1,14 @@
+@mixin home-icon {
+	&::before {
+		position: absolute;
+		display: block;
+		content: '';
+		top: -4px;
+		left: -15px;
+		width: 40px;
+		height: 51px;
+		z-index: -1;
+		background-image: url('./../images/icon/home-icon.svg');
+		opacity: 0.1;
+	}
+}

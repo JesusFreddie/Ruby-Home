@@ -1,0 +1,104 @@
+.reviews {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	&__row {
+		display: flex;
+		position: relative;
+	}
+	&__text {
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 70px;
+	}
+	&__subtitle {
+		color: var(--color-hover);
+	}
+	&__title {
+		//max-width: 630px;
+		max-width: max-content;
+		position: relative;
+
+		@include home-icon;
+	}
+	&__slidershow {
+		position: relative;
+	}
+
+	&__carousel {
+		display: flex;
+		column-gap: 30px;
+	}
+
+	&__carousel:not([data-active]) {
+		display: none;
+	}
+
+	&__item {
+		padding: 30px;
+		border: 2px solid rgba(254, 117, 63, 0.1);
+		border-radius: 18px;
+	}
+
+	.item {
+		position: relative;
+		&__text {
+			max-width: 488px;
+			opacity: 0.7;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		&::after {
+			position: absolute;
+			display: block;
+			content: '';
+			background-image: url('./../images/reviews/apostrophe.svg');
+			width: 64px;
+			height: 64px;
+			top: 35px;
+			right: 30px;
+		}
+	}
+
+}
+
+@media (max-width: 842px) {
+	.reviews {
+
+		&__slidershow {
+			margin: 0 auto;
+		}
+		&__carousel {
+			flex-direction: column;
+			margin: 0 auto;
+			.item {
+				margin-bottom: 20px;
+			}
+		}
+		
+	}
+}
+
+@media (max-width: 576px) {
+	.reviews__title {
+		&::before {
+			display: none !important;
+		}
+	}
+}
+
+@media (max-width: 424px) {
+	.user {
+		&__img {
+			img {
+				border-radius: 50%;
+			}
+		}
+		&__name {
+			font-weight: 600;
+			font-size: 18px !important;
+			line-height: 20px;
+		}
+	}
+}

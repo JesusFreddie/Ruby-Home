@@ -1,0 +1,14 @@
+.carousel {
+	padding-top: 40px;
+	max-width: max-content;
+	margin: 0 auto;
+}
+.carousel__btn {
+	width: 15px;
+	height: 15px;
+	background-color: #EDEDED;
+	border-radius: 50%;
+	&.active {
+		background-color: var(--bg-btn);
+	}
+}

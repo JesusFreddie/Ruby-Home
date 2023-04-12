@@ -1,0 +1,19 @@
+.partners {
+
+	padding-top: 50px;
+	padding-bottom: 70px;
+
+	.title {
+		position: relative;
+		padding-bottom: 65px;
+		width: max-content;
+		margin: 0 auto;
+
+		@include home-icon;
+	}
+
+	&__images {
+		display: flex;
+		justify-content: space-between;
+	}
+}
